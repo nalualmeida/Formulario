@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="formularios.css">
+</head>
+<body>
+    <header>
+        <h1>FORMULÁRIO DE INSCRIÇÃO</h1>
+    </header>
+    <main>
+        <!-- action: local onde os dados serão submetidos; method: como os dados serão enviados (get: dados enviados pela url; post: saõ enviados "escondidos") -->
+        
+        <!-- é bom colocar em divs para colocar uma em uma div para faciliitar com o css (input é uma tag de inline-level) -->
+
+        <form action="redirecionamento.html" method="post">
+            <div>
+                <label for="nome"><b>Nome completo:</b></label>
+                <input class="input" type="text" name="nome" id="nome" maxlength="60" minlength="3" required>
+                <!-- required: campo obrigatório -->
+                <!-- maxlength e minlength: max e min de caracteres -->
+                <!-- readonly: campo apenas de leitura -->
+                <!-- disabled: desabilita a escrita no campo -->
+            </div>
+
+            <div class="sexo">
+                <!-- value: para type radio precisa dele para mandar os dados para o formulário -->
+                <p><b>Sexo:</b></p>
+
+                <label for="feminino">Feminino</label>
+                <input type="radio" name="sexo" id="feminino" value="feminino" required>
+
+                <label for="masculino">Masculino</label>
+                <input  type="radio" name="sexo" id="masculino" value="masculino" required>
+            </div>
+
+            <div>
+                <label for="data"><b>Data de nascimento:</b></label>
+                <input class="input" type="date" name="data" id="data" required>
+            </div>
+
+            <div>
+                <label for="email"><b>E-mail:</b></label>
+                <input class="input" type="email" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label for="telefone"><b>Telefone:</b></label>
+                <input class="input" type="number" name="telefone" id="telefone" required>
+            </div>
+
+            <div>
+                <label for="endereco"><b>Endereço:</b></label>
+                <input class="input" type="text" name="endereco" id="endereco" required>
+            </div>
+
+            <div class="linguagens">
+                <!-- value: para type checkbox precisa dele para mandar os dados para o formulário -->
+                <p><b>Linguagens que você domina:</b></p>
+
+                <label for="js">JavaScript</label>
+                <input type="checkbox" name="linguagens" id="js" value="js">
+
+                <label for="php">PHP</label>
+                <input type="checkbox" name="linguagens" id="php" value="php">
+
+                <label for="cobol">COBOL</label>
+                <input type="checkbox" name="linguagens" id="cobol" value="cobol">
+            </div>
+            
+            <div class="caixa">
+                <p><b>Fale mais sobre suas experências profissionais:</b></p>
+                <textarea name="caixa" id="caixa" cols="60" rows="10" placeholder="Escreva sua resposta aqui"></textarea>
+                <!-- placeholder: fica dentro da própria caixinha -->
+            </div>
+
+            <div class="hora">
+                <p><b>Horário de preferência:</b></p>
+                <select name="hora" id="hora" required>
+                    <option value="matutino">Manhã</option>
+                    <option value="vespertino">Tarde</option>
+                    <option value="noturno">Noite</option>
+                </select>
+            </div>
+
+            <div>
+                <!-- colocoar arquivos -->
+                <p><b>Faça o upload do seu currículo:</b></p>
+                <input class="input" type="file" name="curriculo" id="curriculo" required>
+            </div>
+
+            <div class="cadastro">
+                <input class="input" type="submit" value="CADASTRAR">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

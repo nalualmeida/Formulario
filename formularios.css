@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* responsividade */
+
+body{
+    background-color: rgb(194, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+    color: darkmagenta;
+    margin-top: 20px;
+}
+
+main{
+/* centralizei o formulário */
+    width: 70%;
+    margin: 0 auto;
+}
+
+form{
+    border: 2px solid darkmagenta;
+    padding: 30px;
+    background-color: rgb(255, 211, 199);
+    border-radius: 20px;
+    box-shadow: 15px 15px 15px rgb(62, 11, 107);
+}
+
+.input{
+    width: 100%;
+    outline: none; /* qnd selecionar a caixa, ela n ficará com a borda preta*/
+    padding: 9px;
+    margin-bottom: 1em;
+    border: 1px solid rgb(203, 204, 255);
+    background-color: rgb(203, 204, 255);
+    border-radius: 6px;
+}
+
+div.sexo{
+    margin-bottom: 1em;
+}
+
+div.linguagens{
+    margin-bottom: 1em;
+}
+
+.caixa textarea{
+    border: 1px solid rgb(203, 204, 255);
+    background-color: rgb(203, 204, 255);
+    border-radius: 6px;
+}
+
+.hora{
+    margin-bottom: 1em;
+}
+
+select{
+    border: 1px solid rgb(203, 204, 255);
+    background-color: rgb(203, 204, 255);
+    border-radius: 6px;
+}
